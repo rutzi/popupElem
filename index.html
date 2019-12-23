@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Test</title>
+</head>
+<body>
+	<div class="mainBlock">
+		<div class="block">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, modi quaerat numquam nesciunt laboriosam, eius commodi hic dolorem delectus temporibus.</p>
+			<img src="photo.jpg" alt="Photo">
+			<a href="#" class="button">read more</a>
+		</div>	
+		<div class="moreInfo">
+			<h1>Lorem ipsum dolor sit amet.</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse recusandae aperiam vel velit harum ea in facere alias expedita quos maiores aliquam natus, optio laudantium exercitationem, fugiat laborum voluptatem qui.</p>
+			<a href="#" class="button">close</a>
+		</div>
+	</div>
+
+	<script>
+		let btn = document.querySelectorAll('.button');
+		let blure = document.querySelector('.block');
+		let show = document.querySelector('.moreInfo');
+
+		for (let i = 0; i < btn.length; i++){
+			btn[i].addEventListener('click', showBlock);
+		};
+
+		function showBlock(){
+			blure.classList.toggle('active');
+			show.classList.toggle('moreInfoShow');
+		}
+	</script>
+</body>
+</html>
